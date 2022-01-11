@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    margin: 0;
+ }
+.header { 
+    background-image: url(./assets/header/header-bg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 1200px;
+    padding: 0 405px;
+}
+
+
+
+
+
+
+
+
+
+.header-logo { }
+.header-nav { }
+.header-nav-btn { }
+.header-nav-btn-signin { }
+.header-intro { }
+.header-intro-text { }
+.header-intro-title { }
+.header-intro-p { }
+.header-intro-text-btns { }
+.start-btn { }
+.header-hero { }
+.app-features { }
+.app-features-title { }
+.app-features-text { }
+.icons { }
+.app-get-started { }
+.app-get-started-title { }
+.app-get-started-text { }
+.app-get-started-statistics { }
+.statistics-container { }
+.app-how-to-launch { }
+.app-launch-hero { }
+.app-launch-description { }
+.app-launch-more-info { }
+.app-launch-more-info-description { }
+.app-launch-learn-more { }
+.app-browse-apps { }
+.app-browse-description { }
+.app-browse-more-info { }
+.app-browse-more-info-description { }
+.app-browse-learn-more { }
+.app-browse-hero { }
+.app-showcase { }
+.app-showcase-images { }
+.app-download { }
+.app-download-left { }
+.app-download-btns { }
+.google-play-btn { }
+.btn-primary { }
+.app-download-hero { }
+.blog-posts { }
+.blog-posts-items { }
+.blog-post-item { }
+.subscribe { }
+.subscrib-input { }
+.main-footer { }
+.footer-head { }
+.footer-left { }
+.social-icons { }
+.face { }
+.footer-right { }
+.footer-resources { }
+.horizontal-line { }
+.footer-copyright { }
