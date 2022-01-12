@@ -1,71 +1,502 @@
+:root {
+  --white:#FFFFFF;
+  --red: #FF6328;
+  --light-green: #E7F9F3;
+  --light-red:#FEECEA;
+  --light-purple: #F5EAFF;
+  --light-blue:#EAF1FF;
+  --dark-blue: #4288FF;
+  --bluesh: #F4F9FF;
+  --dak-green: #2ED566;
+  --orange: #FBB935;
+  --purple: #857CFF;
+  --dark-purple: #752CD0;
+  --main-hr-padding: 0 16vw;
+  --h2-font-size: 2.5vw;
+  --dark-grey:#575757;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg, var(--light-purple) 0%, #4B1EB3 100%);
+    letter-spacing: 1px;
 }
 
 .main-container {
     margin: 0;
+    max-width: 1600px;
+    min-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background-color: var(--white);
  }
+
 .header { 
     background-image: url(./assets/header/header-bg.png);
     background-repeat: no-repeat;
-    background-size:cover;
-    height: 1200px;
-    padding: 0 405px;
+    background-size: cover;
+    background-position: center;
+    padding: var(--main-hr-padding);
+    height: 92.8vh;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 62px;
+}
+
+.header-top-logo {
+    width: 140px;
+    display: flex;
+    align-items: center;
+}
+
+.header-top-nav {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+
+.header-nav-btn {
+    list-style: none;
+    margin-left: 52px;
+    cursor: pointer;
+ }
+
+.header-nav-btn-signin {
+    list-style: none;
+    margin-left: 96px;
+    padding: 10px 30px;
+    background-color: var(--red);
+    border-radius: 10px;
+    cursor: pointer;
+    min-width: 113px;
+ }
+
+.header-intro {
+    display: flex;
+    color: var(--white); 
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.header-intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 600px;
+}
+
+.header-intro-text-title {
+    font-size: 3.5vw;
+    letter-spacing: 1px;
+}
+
+.header-intro-text-p { 
+    font-size: 20px;
+}
+
+.header-intro-text-btns {
+    display: flex;
+    align-items: center;
+    width: 260px;
+    justify-content: space-between;
+    margin-top: 60px;
+    color: var(--white);
+}
+
+.start-btn {
+    list-style: none;
+    padding: 13px 50px;
+    background-color: var(--red);
+    border-radius: 10px;
+    cursor: pointer;  
+    border: none;
+    color: var(--white);
+}
+
+.app-features { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: var(--main-hr-padding);
+}
+
+.app-features-title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+ }
+
+.app-features-text { 
+    font-size: 16px;
+    color: #575757;
+}
+
+.app-features-icons { 
+    display: flex;
+    justify-content: space-between;
+    min-width: 900px;
+    padding: 35px;
+    background-image: 
+        url(./assets/features/dashed-bg.png), 
+        url(./assets/features/dashed-bg-1.png);
+    background-position: 
+        10px 10px, 
+        98% 90%;
+    background-repeat: no-repeat;
+    background-size: 100px; 
+}
+
+.app-features-icon { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.app-features-icon img {
+    width: 70px;
+}
+
+.app-features-icon--green{
+    background: var(--light-green);
+    color: var(--dak-green);
+}
+
+.app-features-icon--red{
+    background: var(--light-red);
+    color: var(--red);
+}
+
+.app-features-icon--purple{
+    background: var(--light-purple);
+    color: var(--dark-purple);
+}
+
+.app-features-icon--blue{
+    background: var(--light-blue);
+    color: var(--dark-blue);
+}
+
+.app-get-started { 
+    background-color: var(--bluesh);
+    padding: var(--main-hr-padding);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.app-get-started-title { 
+    font-size: var(--h2-font-size);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.app-get-started-text {
+    font-size: 12px;
+    color: var(--dark-grey);
+    margin-bottom: 100px;
+ }
+
+.app-get-started-statistics { 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.statistics-container p {
+    color: var(--dark-grey);
+    margin-top: 12px;
+ }
+
+ .statistics-container--blue {
+    color: var(--dark-blue);
+ }
+
+ .statistics-container--green {
+    color: var(--dak-green);
+ }
+
+ .statistics-container--orange {
+    color: var(--orange);
+ }
+
+ .statistics-container--purple {
+    color: var(--dark-purple);
+ }
+
+.app-how-to-launch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--main-hr-padding);
+ }
+
+.app-launch-hero {
+    width: 50%;
+    height: 677px;
+    background-image: url(./assets/launch/hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+ }
+
+.app-launch-description { 
+    margin-left: 20px;
+    width: 50%;
+}
+
+.app-launch-description h2 { 
+    font-size: var(--h2-font-size);
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.app-launch-description p { 
+    font-size: 12px;
+    color: var(--dark-grey);
+}
+
+.app-launch-more-info { 
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    max-width: 300px;
+}
+
+.app-launch-more-info h3{ 
+    font-size: 16px;
+}
+
+/* .app-launch-more-info-description {} */
+.app-launch-learn-more {
+    border: 1px solid var(--light-red);
+    padding: 16px 30px;
+    width: 187px;
+    margin-top: 25px;
+    color: var(--red);
+    border-radius: 10px; 
+    cursor: pointer;
+ }
+
+.app-browse-apps { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--main-hr-padding);
+}
+.app-browse-description {
+    margin-right: 20px;
+    width: 50%;
+}
+
+.app-browse-description h2 { 
+    font-size: var(--h2-font-size);
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.app-browse-description p { 
+    font-size: 12px;
+    color: var(--dark-grey);
+}
+
+.app-browse-more-info {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    max-width: 300px;
+}
+
+.app-browse-more-info h3{ 
+    font-size: 16px;
+}
+
+/* .app-browse-more-info-description { } */
+.app-browse-learn-more { 
+    border: 1px solid var(--light-red);
+    padding: 16px 30px;
+    width: 187px;
+    margin-top: 25px;
+    color: var(--red);
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+.app-browse-hero {
+    width: 50%;
+    height: 677px;
+    background-image: url(./assets/browse/hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.app-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 120px;
+    /* padding: var(--main-hr-padding); */
+ }
+
+.app-showcase h2 {
+    font-size: var(--h2-font-size);
+ }
+
+.app-showcase p {
+    font-size: 16px;
+    color: var(--dark-grey);
+    margin-top: 20px;
+    margin-bottom: 50px;
+ }
+
+.app-showcase-slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--bluesh);
+    padding: 40px 100px;
+ }
+
+.app-showcase-images { 
+    display: flex;
+    justify-content: flex-start;
+    max-width: 700px;
+}
+
+.app-showcase-images img{ 
+    width: 200px;
+    margin-left: -15px;
+}
+
+.app-showcase-arrow-btn{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.app-download {
+
+    padding: var(--main-hr-padding);
+    display: flex;
+    justify-content: center;
+    margin: 120px 0;
+ }
+ 
+.app-download-w{
+    width: 740px;
+    height: 300px;
+    background: var(--dark-purple);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.app-download-left {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+ }
+
+.app-download-left p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 12px;
+ }
+
+.app-download-btns {
+    display: flex;
+}
+
+.app-download-btns p{
+    margin: 0;
+}
+
+.google-play-btn {
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--white);
+    width: 140px;
+    font-weight: 500;
+    height:42px;
+ }
+
+.apple-store-btn {
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--red);
+    color: var(--white);
+    width: 130px;
+    font-weight: 500;
+    height:42px;
+    margin-left: 20px;
+}
+
+.app-download-hero { 
+    width: 50%;
+    height: 677px;
+    background-image: url(./assets/download/hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+
+
+}
+.blog-posts-items { 
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.blog-post-item { 
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(13, 0, 51, 0.1);
+    border-radius: 20px;
+    width: 250px;
 }
 
 
-
-
-
-
-
-
-
-.header-logo { }
-.header-nav { }
-.header-nav-btn { }
-.header-nav-btn-signin { }
-.header-intro { }
-.header-intro-text { }
-.header-intro-title { }
-.header-intro-p { }
-.header-intro-text-btns { }
-.start-btn { }
-.header-hero { }
-.app-features { }
-.app-features-title { }
-.app-features-text { }
-.icons { }
-.app-get-started { }
-.app-get-started-title { }
-.app-get-started-text { }
-.app-get-started-statistics { }
-.statistics-container { }
-.app-how-to-launch { }
-.app-launch-hero { }
-.app-launch-description { }
-.app-launch-more-info { }
-.app-launch-more-info-description { }
-.app-launch-learn-more { }
-.app-browse-apps { }
-.app-browse-description { }
-.app-browse-more-info { }
-.app-browse-more-info-description { }
-.app-browse-learn-more { }
-.app-browse-hero { }
-.app-showcase { }
-.app-showcase-images { }
-.app-download { }
-.app-download-left { }
-.app-download-btns { }
-.google-play-btn { }
-.btn-primary { }
-.app-download-hero { }
-.blog-posts { }
-.blog-posts-items { }
-.blog-post-item { }
 .subscribe { }
 .subscrib-input { }
 .main-footer { }

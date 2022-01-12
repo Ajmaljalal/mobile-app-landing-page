@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <title>Mobile App Landing Page</title>
 </head>
@@ -13,33 +16,33 @@
   <div class="main-container">
     <div class="header">
 
-      <div class="header-logo">
-        <img src="./assets/header/Logo.png" alt="app-logo">
+      <div class="header-top">
+        <div class="header-top-logo">
+          <img src="./assets/header/Logo.png" alt="app-logo">
+        </div>
+        <!--END-header-top-logo-->
+        <div class="header-top-nav">
+          <li class="header-nav-btn">Home</li>
+          <li class="header-nav-btn">Service</li>
+          <li class="header-nav-btn">About</li>
+          <li class="header-nav-btn">Page</li>
+          <li class="header-nav-btn">Case Studies</li>
+          <li class="header-nav-btn-signin">Sign in</li>
+        </div>
+        <!--END-header-top-nav-->
       </div>
-      <!--END-header-logo-->
+      <!--END-header-top-->
 
-      <div class="header-nav">
-        <li class="header-nav-btn">Home</li>
-        <li class="header-nav-btn">Service</li>
-        <li class="header-nav-btn">About</li>
-        <li class="header-nav-btn">Page</li>
-        <li class="header-nav-btn">Case Studies</li>
-        <li class="header-nav-btn-signin">Sign in</li>
-      </div>
-      <!--END-header-nav-->
 
       <div class="header-intro">
         <div class="header-intro-text">
-          <h1 class="header-intro-title">Simplify your life with Landix</h1>
-          <p class="header-intro-p">Charles tosser quaint twit bamboozled burke brown bread I naff I
+          <h1 class="header-intro-text-title">Simplify your life with Landix</h1>
+          <p class="header-intro-text-p">Charles tosser quaint twit bamboozled burke brown bread I naff I
             don't want no agro say blimey.!!</p>
           <div class="header-intro-text-btns">
             <button class="start-btn">Start Now</button>
             <img src="./assets/header/playBtn.png" alt="play-button">
           </div>
-        </div>
-        <div class="header-hero">
-          <img src="./assets/header/hero.png" alt="">
         </div>
       </div>
       <!--END-header-intro-->
@@ -50,11 +53,23 @@
     <div class="app-features">
       <h2 class="app-features-title">What you can do</h2>
       <p class="app-features-text">The full monty spiffing good time no biggie cack grub fantastic.</p>
-      <div class="app-features icons">
-        <img src="./assets/features/eastyToUser.png" alt="easy to use icon">
-        <img src="./assets/features/development.png" alt="development icon">
-        <img src="./assets/features/functional.png" alt="functional icon">
-        <img src="./assets/features/secured.png" alt="secured icon">
+      <div class="app-features-icons">
+        <div class="app-features-icon app-features-icon--green">
+          <img src="./assets/features/eastyToUser.png" alt="easy to use icon">
+          <p>Easy to use</p>
+        </div>
+        <div class="app-features-icon app-features-icon--red">
+          <img src="./assets/features/development.png" alt="development icon">
+          <p>App Development</p>
+        </div>
+        <div class="app-features-icon app-features-icon--purple">
+          <img src="./assets/features/functional.png" alt="functional icon">
+          <p>Fully Functional</p>
+        </div>
+        <div class="app-features-icon app-features-icon--blue">
+          <img src="./assets/features/secured.png" alt="secured icon">
+          <p>Secured protocol</p>
+        </div>  
       </div>
     </div>
     <!--END-app-features-->
@@ -64,19 +79,19 @@
       <p class="app-get-started-text">The app provides design and digital marketing, applied arts can include industrial
         design</p>
       <div class="app-get-started-statistics">
-        <div class="statistics-container">
+        <div class="statistics-container statistics-container--blue">
           <h2>96k+</h2>
           <p>Daily active users</p>
         </div>
-        <div class="statistics-container">
+        <div class="statistics-container statistics-container--green">
           <h2>75k+</h2>
-          <p>Project complate/p>
+          <p>Project complate</p>
         </div>
-        <div class="statistics-container">
+        <div class="statistics-container statistics-container--orange">
           <h2>56k+</h2>
           <p>Download software</p>
         </div>
-        <div class="statistics-container">
+        <div class="statistics-container statistics-container--purple">
           <h2>63k+</h2>
           <p>5 Star rating reviews</p>
         </div>
@@ -85,9 +100,7 @@
     <!--END-app-get-started-->
 
     <div class="app-how-to-launch">
-      <div class="app-launch-hero">
-        <img src="./assets/launch/hero.png" alt="app-image">
-      </div>
+      <div class="app-launch-hero"></div>
       <div class="app-launch-description">
         <h2>Landix lets you launch your app in minutes.</h2>
         <p>He nicked it tickety boo harry the cras bargy chap mush spiffing spend a penny the full monty burke butty.
@@ -136,46 +149,46 @@
           Learn More ->
         </div>
       </div>
-      <div class="app-browse-hero">
-        <img src="./assets/browse/hero.png" alt="app-image">
-      </div>
+      <div class="app-browse-hero"></div>
     </div>
     <!--END-app-browse-apps-->
 
     <div class="app-showcase">
       <h2>Creative app showcase</h2>
       <p>The app provides design and digital marketing.</p>
-      <div class="app-showcase-images">
-        <img src="./assets/showcase/arrow-left.png" alt="">
-        <img src="./assets/showcase/screen-1.png" alt="">
-        <img src="./assets/showcase/screen_2.png" alt="">
-        <img src="./assets/showcase/screen-3.png" alt="">
-        <img src="./assets/showcase/screen-4.png" alt="">
-        <img src="./assets/showcase/arrow-right.png" alt="">
+      <div class="app-showcase-slider">
+        <img src="./assets/showcase/arrow-left.png" alt="" class="app-showcase-arrow-btn">
+        <div class="app-showcase-images">
+          <img src="./assets/showcase/screen-1.png" alt="">
+          <img src="./assets/showcase/screen_2.png" alt="">
+          <img src="./assets/showcase/screen-3.png" alt="">
+          <img src="./assets/showcase/screen-4.png" alt="">
+        </div>
+        <img src="./assets/showcase/arrow-right.png" alt="" class="app-showcase-arrow-btn">
       </div>
     </div>
     <!--END-app-showcase-->
 
     <div class="app-download">
-      <div class="app-download-left">
-        <h2>Download app today!</h2>
-        <p>Download app for Andraoid and iPhone today — it's free.</p>
-        <div class="app-download-btns">
-          <button class="google-play-btn">
-            <img src="./assets/download/android.png" alt="google-play-icon">
-            <p>Google Play</p>
-          </button>
-          <button class="btn-primary">
-            <img src="./assets/download/ios.png" alt="app-store-icon">
-            <p>App Store</p>
-          </button>
+      <div class="app-download-w">
+        <div class="app-download-left">
+          <h2>Download app today!</h2>
+          <p>Download app for Andraoid and iPhone today — it's free.</p>
+          <div class="app-download-btns">
+            <button class="google-play-btn">
+              <img src="./assets/download/android.png" alt="google-play-icon">
+              <p>Google Play</p>
+            </button>
+            <button class="apple-store-btn">
+              <img src="./assets/download/ios.png" alt="app-store-icon">
+              <p>App Store</p>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="app-download-hero">
-        <img src="./assets/download/hero.png" alt="">
+        <div class="app-download-hero"></div>
       </div>
     </div>
-    <!--END-app-downloade-->
+    <!--END-app-download-->
 
     <div class="blog-posts">
       <h2>Latest blog posts</h2>
